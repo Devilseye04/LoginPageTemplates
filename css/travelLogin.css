@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.loginpage__container{
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: max-content;
+}
+
+.loginpage__form{
+    background: #fff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+.loginpage__logo{
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #4aacac;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.loginpage__heading{
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.loginpage__heading h1{
+    margin-bottom: 1rem;
+}
+
+.loginpage__heading h2{
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.loginpage__content{
+    display: block;
+}
+
+.loginpage__content h4{
+    color: darkgrey;
+    margin-bottom: .5rem;
+}
+
+.loginpage__content--input{
+    outline: 0;
+    width: 70%;
+    height: 40px;
+    border-width: 0 0 2px;
+    border-color: #4aacac;
+    margin-bottom: 3rem;
+    font-size: large;
+}
+
+
+.loginpage__content--submit{
+    display: block;
+    margin-left: 15%;
+}
+
+.loginpage__content--submit input{
+    color: #fff;
+    background: #4aacac;
+    margin-bottom: 2rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    outline: 0;
+    border: 0; 
+}
+
+.loginpage__content--submit span{
+    justify-content: space-between;
+    margin-left: 2em;
+}
+
+.loginpage__content--submit span a{
+    justify-content: space-between;
+    margin-left: .25em;
+}
+
+@media screen and (max-width: 768px) {
+    .loginpage__container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .loginpage__form{
+        width: parent;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    img{
+        height: 90%;
+    }
+
+    .loginpage__content--submit input{
+        margin-left: -0.25em;
+    }
+    .loginpage__content--submit span{
+        margin-left: -3em;
+    }
+}
